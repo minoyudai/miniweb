@@ -1,0 +1,228 @@
+.body {
+  margin: 0;
+  padding: 0;
+  }
+
+  .header {
+    z-index: 2;
+
+    background-color: white;
+    color: red;
+    height: 130px;
+    width: 100%;
+    position: fixed;
+  }
+  
+
+
+  .tooth{
+    padding-top: 47px;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+  }
+  .pair{
+    background-color: white;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+  
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+    font-size: 30px;
+    padding: 10px 40px;
+    color: lighten(black,40%);
+    font-weight: bold;
+
+  }
+  
+  .pair:hover{
+    border-bottom: 4px solid black;
+    text-align: center;
+    float: left;
+    color: black;
+    padding: 10px 40px;
+    font-weight: bold;
+    background-color: lighten(gray,40%);
+    transition: 0.2s;
+
+  }
+  
+  .tradingview-widget-container {
+    position: fixed;
+  }
+
+
+  .chat {
+    // position: fixed;
+    z-index: 1;
+    width: 450px;
+    float: left;
+    height: calc(100vh - 140px);
+    background-color: white;
+    padding: 180px 0px 0px;
+    border-radius: 10px ;
+  }
+
+  .message_name{
+    position: fixed;
+    background-color: gray;
+    font-size: 30px;
+    text-align: center;
+    width: 450px;
+    height: 60px;
+    border-radius: 30px 30px 0px 0px;
+    margin: auto;
+
+  }
+
+  .messages {
+    border-radius: 30px 30px 0px 0px;
+    padding: 60px 0px 0px;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    overflow: scroll;
+    height: 100vh;
+    .message {
+      .head-message {
+        display: flex;
+        &__user-name {
+          color: #434a54;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &__date {
+          color: black;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+      .foot-message {
+        margin-top: 10px;
+        &__content {
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .form {
+    border-radius: 0px 0px 30px 30px;
+    background-color:gray;
+    box-sizing: border-box;
+    height: 90px;
+    padding: 20px 30px 20px 30px;
+    position: fixed;
+    width: 450px;
+    bottom: 0;
+    &__message {
+      border-radius: 10px 0px 0px 10px;
+      border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
+    }
+    &__mask {
+      border-radius: 0px 10px 10px 0px;
+      background-color: white;
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+      &__image {
+        font-size: 20px;
+        line-height: 50px;
+      }
+      .hidden {
+        display: none;
+      }
+    }
+    &__submit {
+      border-radius: 100px;
+      background-color: darken(gray,40%);
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 20px;
+      float: left;
+    }
+    &__submit:hover {
+      background-color: red;
+      border: none;
+      color: white;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+    }
+    &__submit:active {
+      background-color: yellow;
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+    }
+    &__submitu {
+      border-radius: 100px;
+      background-color: darken(gray,40%);
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 20px;
+    }
+    &__submitu:hover {
+      background-color: blue;
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+    }
+    &__submitu:active {
+      background-color: yellow;
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+    }
+  
+  }
+  
+  
+  .contents{ 
+    padding-top: 195px;
+    padding-right: 0px;
+    margin-right: 20px;
+    float: right;
+    width: 900px;
+    height: 700px;
+  
+  }
+.fa-chart-line{
+  font-size: 30px ;
+}
+
+.fas.fa-home{
+  font-size: 20px ;
+
+}
+
+.far.fa-user-circle{
+  font-size: 20px ;
+
+}

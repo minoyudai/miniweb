@@ -1,0 +1,218 @@
+.body
+.header
+
+  %nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    %a.navbar-brand{:href => "#"} 
+      %i.fas.fa-chart-line
+
+    %button.navbar-toggler{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarNavDropdown.collapse.navbar-collapse
+      %ul.navbar-nav
+        %li.nav-item.active
+          %a.nav-link{:href => "#"}
+            %i.fas.fa-home
+
+            %span.sr-only (current)
+        %li.nav-item
+          -# %a.nav-link{:href => "#"} cus
+        %li.nav-item.dropdown
+          %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            %i.far.fa-user-circle
+
+          .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+            %a.dropdown-item{:href => "#"} Yudai
+            %a.dropdown-item{:href => "#"} Log In
+            %a.dropdown-item{:href => "#"} Log Out
+  
+  / TradingView Widget BEGIN
+  .tradingview-widget-container
+    .tradingview-widget-container__widget
+    .tradingview-widget-copyright
+      
+      -# %a{:href => "https://jp.tradingview.com", :rel => "noopener", :target => "_blank"}
+        -# %span.blue-text ティッカーテープ
+    %script{:async => "", :src => "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js", :type => "text/javascript"}
+      :cdata
+        {
+        "symbols": [
+        {
+        "description": "",
+        "proName": "OANDA:USDJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:EURJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:GBPJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:CHFJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:AUDJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:NZDJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:CADJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:ZARJPY"
+        },
+        {
+        "description": "",
+        "proName": "OANDA:HKDJPY"
+        }
+        ],
+        "colorTheme": "light",
+        "isTransparent": true,
+        "displayMode": "adaptive",
+        "locale": "ja"
+        }
+  / TradingView Widget END
+  
+  .tooth
+    = link_to 'USD', 'messages#index' ,class:"pair"
+    = link_to 'EUR', 'country#index' ,class:"pair"
+    = link_to 'GBP', 'messages#index' ,class:"pair"
+    = link_to 'CHF', 'messages#index' ,class:"pair"
+    = link_to 'AUD', 'messages#index' ,class:"pair"
+    = link_to 'NZD', 'messages#index' ,class:"pair"
+    = link_to 'CAD', 'messages#index' ,class:"pair"
+    = link_to 'ZAR', 'messages#index' ,class:"pair"
+    = link_to 'TRY', 'messages#index' ,class:"pair"
+    = link_to 'HKD', 'messages#index' ,class:"pair"
+ 
+.chat
+  .message_name
+    タイムライン
+  .messages
+    .message
+      .head-message
+        .head-message__user-name
+          USD/JPY　↓
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          初心者ですが、グラフの見方がわかりません。
+    .message
+      .head-message
+        .head-message__user-name
+          TRY/JPY　↑
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          7時からドルの上昇ウェーク予想！！！
+    .message
+      .head-message
+        .head-message__user-name
+          HKD/JPY　↓
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          みなさん、通貨ペア多いですね。よろしくおねがいします
+    .message
+      .head-message
+        .head-message__user-name
+          ZAR/JPY　↑
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          あああああああああああああああああああ
+    .message
+      .head-message
+        .head-message__user-name
+          USD/JPY　↓
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお
+    .message
+      .head-message
+        .head-message__user-name
+          USD/JPY　↓
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          うううううううううううううう
+    .message
+      .head-message
+        .head-message__user-name
+          ワールド
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          メッセージ
+    .message
+      .head-message
+        .head-message__user-name
+          ワールド
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          メッセージ
+    .message
+      .head-message
+        .head-message__user-name
+          ワールド
+        .head-message__date
+          2019/06/15
+      .foot-meesage
+        .foot-message__content
+          メッセージ
+  .form
+    %form
+      %input.form__message
+      .form__mask
+        %label.form__mask__image
+          %input.hidden{type: 'file'}
+      %input.form__submit{type: 'submit', value: '↑'}
+      %input.form__submitu{type: 'submit', value: '↓'}
+
+.contents
+  / TradingView Widget BEGIN
+  .tradingview-widget-container
+    #tradingview_703ed
+    .tradingview-widget-copyright
+      
+      %a{:href => "https://jp.tradingview.com/symbols/OANDA-EURJPY/", :rel => "noopener", :target => "_blank"}
+        %span.blue-text EURJPYチャート
+    %script{:src => "https://s3.tradingview.com/tv.js", :type => "text/javascript"}
+    :javascript
+      new TradingView.widget(
+        {
+        "width": 880,
+        "height": 600,
+        "symbol": "OANDA:EURJPY",
+        "interval": "60",
+        "timezone": "Etc/UTC",
+        "theme": "Light",
+        "style": "1",
+        "locale": "ja",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "container_id": "tradingview_703ed"
+      }
+        );
+  / TradingView Widget END
+
+
+
